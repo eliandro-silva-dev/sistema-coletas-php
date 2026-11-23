@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+
+<BODY>
+    <b>
+        <font color="#0000FF">Cadastro de Funcionario</font>
+    </b> </br> </br>
+    <form action="funcionarioInsert.php" method="post">
+        <b> Código Funcionário:</b> <input type="text" name="codigo" size="8" required>
+        </br></br>
+        <b> Nome:</b> <input type="text" name="nome" size="30">
+        </br></br>
+        <label for="tipo">Selecione o tipo de funcionario:</label>
+        <select name="tipo" id="tipo" required>
+            <option value="">--Escolha uma opção:--</option>
+            <option value="motoboy">Motoboy</option>
+            <option value="carro">Motorista (Carro)</option>
+            <option value="office">Office Boy</option>
+        </select>
+
+        <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+    </form>
+</BODY>
+
+</HTML>
